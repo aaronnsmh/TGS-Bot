@@ -7,7 +7,7 @@ exports.run = (Discord, client, message, args) => {
     if (!kUser) return message.channel.send("Can't find user!");
     let kReason = args.join(" ").slice(22);
     if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("No can do pal!");
-    if (kUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send("That person can't be kicked!");
+    if (kUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send("That person can't be banned!");
 
     const embed = new Discord.RichEmbed()
             .setColor(0x8cff00)
