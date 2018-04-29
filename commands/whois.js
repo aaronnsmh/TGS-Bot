@@ -17,7 +17,7 @@ exports.run = async (Discord, client, message, args) => {
 	let groupurl = groupurlbase + id;
           const embed = new Discord.RichEmbed()
 		   .setColor("#00ff00")
-	  	   .setDescription("**Roblox Name: **\n" + username + "\n**Roblox ID:**\n" + id + "\n**Profile Link:** \n" + "https://www.roblox.com/users/" + id + "\n**Rank In Group:**\n" + groupurl)
+	  	   .setDescription("**Roblox Name: **\n" + username + "\n**Roblox ID:**\n" + id + "\n**Profile Link:** \n" + "https://www.roblox.com/users/" + id + ")
 		   .setFooter("Requested by " + message.author + " at ")
 		   .setTimestamp()
 	  	   .setThumbnail(avatarurl)
