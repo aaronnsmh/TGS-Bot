@@ -7,10 +7,10 @@ let name = client.user.username;
     
     message.reply("Here is the help you are looking for:");
     var embedcmds= new Discord.RichEmbed()
-        .setFooter("©Made by Aaron")
+        .setFooter("© Made by Aaron")
         .setColor(randomColor)
         .setTitle("Bot Help")
-        .setDescription("The prefix for this server is '-'. Run -cmds for info on how to use each command!")
+        .setDescription("The prefix for this server is '!'. Run -cmds for info on how to use each command!")
         .setThumbnail(thumbnail)
         .setAuthor(name,thumbnail)
     message.channel.sendEmbed(embedcmds);
