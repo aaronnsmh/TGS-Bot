@@ -9,23 +9,35 @@ let thumbnail = client.user.avatarURL;
         .setAuthor(name,thumbnail)
         .setColor(randomColor)
         .setTitle(":book:   " + name + " Commands")
-        .setDescription("Wondering what I do? Well you sir/ma'am have a very good question! Read on to see why I am here!")
+      .setDescription("Wondering what I do? Well you sir/ma'am have a very good question! Read on to see why I am here! The prefix here is 'KC' (thanks to SuperRussia for the idea)")
         .addField(":8ball: 8Ball [QUESTION]", "Responds with what will happen.")
         .addField(":gay_pride_flag:  randomcolor", "Responds with a random hex color.")
         .addField(":o: cointoss", "Tosses a coin.")
         .addField(":frame_photo: avatar [@USER]", "Shows a picture of a tagged persons avatar!")
+        .addField(":koala:  koala/cat", "Posts a random picture of the animal. (Thanks to Robloxian_Thinking)")
+        .addField(":books:  dogfact/catfact", "Returns a random fact about your chosen animal.")
+        .addField(":grey_question: whois [@USER]", "If the user is verified, it will respond with their roblox name and ID.")
+        .addField(":gift:  gif [SEARCH]", "Searches the interweb for your gif.")
         .addField(":clock1: More CMDS coming soon", "What do you expect me to put here?")
     var admin= new Discord.RichEmbed()
+        .setFooter("© " + name + "  | Made by Aaron#1742")
+        .setTitle("Mod Commands")
+        .setColor(randomColor)
+        .addField(":fire: kick/ban [@USER] [REASON]", "The bot kicks/bans the user with the reason you put. Tut tut!")
+        .addField(":warning: Warn [@USER] [REASON]", "Warns the specified user and logs it.")
+        .addField(":warning: Warnings [@USER]", "Tells you what to search for in #logs to check someones warnings.")
+    var admin2= new Discord.RichEmbed()
         .setFooter("© " + name + "  | Made by Aaron#1742")
         .setTitle("Admin Commands")
         .setColor(randomColor)
         .addField(":loudspeaker: say [STRING]", "The bot says what you ask it to say, well duh.")
-        .addField(":fire: kick/ban [@USER] [REASON]", "The bot kicks/bans the user with the reason you put. Tut tut!")
         .addField(":exclamation: announce [TITLE] [DESCRIPTION]", "Announces whatever you put in the channel you write it in.")
-        .addField(":mailbox_with_mail: purge [NUMBER]", "Deletes a specified amount of messages.")
+        .addField(":exclamation: eannounce [TITLE] [DESCRIPTION]", "Announces whatever you put in the channel you write it in, also tags everyone.")
     message.channel.sendEmbed(embedcmds);
     if (!message.member.hasPermission("MANAGE_MESSAGES")) return
     message.channel.sendEmbed(admin);
+    if (!message.member.hasPermission("ADMINISTRATOR")) return
+    message.channel.sendEmbed(admin2);
     message.delete(10000)
 
 }
