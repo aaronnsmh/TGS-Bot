@@ -1,5 +1,5 @@
 {
-  "name": "ibot",
+  "name": "TGS Bot",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -10,7 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "discord.js": "^11.2.1",
+    "snekfetch": "^3.2.9",
     "quick.db": "^5.3.5",
-    "superagent": "^3.8.2"
-  }
+    "superagent": "^3.8.0"
+    
+}
 }
