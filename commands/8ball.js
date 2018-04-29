@@ -17,7 +17,6 @@ function doMagic8BallVoodoo() {
 		   .setThumbnail("https://pbs.twimg.com/profile_images/178167256/8ball.jpg.jpeg")
 		   .setTitle("Magic 8 ball :8ball:")
 		   .setDescription(`**${author.tag} Asked:**\n${question}`)
-		   .addBlankField(true)
 		   .addField("Result:",doMagic8BallVoodoo())
 		   .setFooter("Requested by " + message.author.tag + " at ")
 		   .setTimestamp()
