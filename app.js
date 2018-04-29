@@ -5,7 +5,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const db = require('quick.db');
-const prefix = '!';
+const prefix = '!!';
 const { get } = require("snekfetch"); 
 const superagent = require("superagent");
 
@@ -13,7 +13,7 @@ var randomColor = Math.floor(Math.random() * 16777215).toString(16);
    
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}! There are no apparent major bugs.`);
-    client.user.setActivity(' TG Systems | !help', { type: 'WATCHING' });
+    client.user.setActivity(' TG Systems | !!help', { type: 'WATCHING' });
     client.user.setStatus("online");
 });
 
@@ -24,15 +24,15 @@ client.on('message', message => {
 
     if (sender.bot) return;
     if (message.channel.type === 'dm') {
-        message.channel.send("**Unfortunately we can only read things in guilds (servers). The comamnd prefix is '!' **")
+        message.channel.send("**Unfortunately we can only read things in guilds (servers). The comamnd prefix is '!!' **")
         return;
 }
     
 
    
    
-   if (message.mentions.members.firstKey() === '383658506060038144') {
-    message.channel.send(':zzz: :zzz: :sleeping: You woke me. How rude! :angry: My prefix is !')
+   if (message.mentions.members.firstKey() === '440230198474965002') {
+    message.channel.send(':zzz: :zzz: :sleeping: You woke me. How rude! :angry: My prefix is !!')
    }
    
 
