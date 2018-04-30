@@ -12,7 +12,7 @@ exports.run = (Discord, client, message, args) => {
 		   .setThumbnail(client.user.avatarURL)
 		   .setTitle(":mega: Announcement: " + title)
 		   .setDescription("**Announced by: " + message.author + "**\n\n" + text + "\n")
-		   .setFooter("An announcment from" + author + " made at ")
+		   .setFooter("An announcment made at ")
 		   .setTimestamp()
 		   message.channel.send({embed})
 	   
