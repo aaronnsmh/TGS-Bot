@@ -22,7 +22,7 @@ client.on('message', message => {
 
     let sender = message.author;
 
-    //if (sender.bot) return;
+    if (sender.bot) return;
     if (message.channel.type === 'dm') {
         message.channel.send("**Unfortunately we can only read things in guilds (servers). The comamnd prefix is '!!' **")
         return;
