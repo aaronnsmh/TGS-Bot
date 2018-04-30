@@ -10,11 +10,10 @@ exports.run = (Discord, client, message, args) => {
 		   const embed = new Discord.RichEmbed()
 		   .setColor("#00ff00")
 		   .setThumbnail(client.user.avatarURL)
-		   .setTitle(":mega: Announcement:")
+		   .setTitle(":mega: Announcement From" +  author.id + " :")
 		   .setDescription(text)
 		   .setFooter("An announcment from " + author.id + " made at ")
 		   .setTimestamp()
-		   message.channel.send("Announcement from: " + author);
 		   message.channel.send({embed})
 	   
 }
