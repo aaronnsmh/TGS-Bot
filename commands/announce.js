@@ -9,7 +9,7 @@ exports.run = (Discord, client, message, args) => {
 		   //const colour = args.slice(2).join("");
 		   const embed = new Discord.RichEmbed()
 		   .setColor("#00ff00")
-		   .setThumbnail(client.user.avatar)
+		   .setThumbnail(client.user.avatarURL)
 		   .setTitle(":mega: Announcement:")
 		   .setDescription(text)
 		   .setFooter("An announcment from " + author + " made at ")
