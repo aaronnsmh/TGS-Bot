@@ -11,7 +11,7 @@ exports.run = (Discord, client, message, args) => {
 		   .setColor("#00ff00")
 		   .setThumbnail(client.user.avatarURL)
 		   .setTitle(":mega: Announcement: " + title)
-		   .setDescription("**Announced by: " + message.author + "**\n\n" + text)
+		   .setDescription("**Announced by: " + message.author + "**\n\n" + text + "\n")
 		   .setFooter("An announcment from" + author + " made at ")
 		   .setTimestamp()
 		   message.channel.send({embed})
