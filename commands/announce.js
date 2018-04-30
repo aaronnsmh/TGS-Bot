@@ -1,7 +1,5 @@
 exports.run = (Discord, client, message, args) => {
 
-let allowedRole = message.guild.roles.find("name", "bot admin");	
-
        if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send("wot u doin? this command is for kewl ppl only (If you think this is wrong, make sure you have the administrator discord permission)")
 		   const color = args[0]
 				
