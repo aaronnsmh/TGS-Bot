@@ -14,7 +14,7 @@ exports.run = (Discord, client, message, args) => {
 		   .setDescription(text)
 		   .setFooter("An announcment from " + author + " made at ")
 		   .setTimestamp()
-		   message.channel.send("Announcement from: " + author);
+		   message.channel.send("Announcement from: " + author.id);
 		   message.channel.send({embed})
 	   
 }
