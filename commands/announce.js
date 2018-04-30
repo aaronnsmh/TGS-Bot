@@ -1,6 +1,6 @@
 exports.run = (Discord, client, message, args) => {
 
-       if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send("wot u doin? this command is for kewl ppl only (If you think this is wrong, make sure you have the administrator discord permission)")
+       if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send("You need the ADMINISTRATOR permission to run this comamnd!")
 		   const color = args[0]
 				
 		   const text = args.slice(1).join(" ");
