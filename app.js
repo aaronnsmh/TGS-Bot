@@ -2,13 +2,13 @@
 // Version: 0.9 PRE-ALPHA / PRE-REALEASE
 // Discord Code: 
 
-const Discord = require('discord-js');
+const Discord = require('discord.js');
 const client = new Discord.Client();
 const db = require('quick.db');
 const prefix = '!!';
 const { get } = require("snekfetch"); 
 const superagent = require("superagent");
-const weather = require('weather.js');
+const weather = require('weather-js');
 
 var randomColor = Math.floor(Math.random() * 16777215).toString(16);
    
