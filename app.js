@@ -8,6 +8,7 @@ const db = require('quick.db');
 const prefix = '!!';
 const { get } = require("snekfetch"); 
 const superagent = require("superagent");
+const weather = require('weather-js');
 
 var randomColor = Math.floor(Math.random() * 16777215).toString(16);
    
