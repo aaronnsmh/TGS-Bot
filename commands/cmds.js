@@ -19,6 +19,7 @@ let thumbnail = client.user.avatarURL;
         .addField(":grey_question: whois [@USER]", "If the user is verified, it will respond with their roblox name and ID.")
         .addField(":gift:  gif [SEARCH]", "Searches the interweb for your gif.")
         .addField(":link: shorten [LINK] [title]", "Shortens the specified URL with the optional title!")
+        .addField(":white_sun_cloud: weather [CITY]", "Shows the weather for your specified city.")
         .addField(":clock1: More CMDS coming soon", "What do you expect me to put here?")
     var admin= new Discord.RichEmbed()
         .setFooter("© " + name + "  | Made by Aaron#1742")
