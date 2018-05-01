@@ -15,7 +15,7 @@
     "quick.db": "^5.3.5",
     "superagent": "^3.8.0",
     "isgd": "^1.0.0",
-    "weather.js": "^1.0.0"
+    "weather-js": "^1.0.0"
     
 }
 }
