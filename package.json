@@ -14,7 +14,8 @@
     "snekfetch": "^3.2.9",
     "quick.db": "^5.3.5",
     "superagent": "^3.8.0",
-    "isgd": "^1.0.0"
+    "isgd": "^1.0.0",
+    "weather.js": "^2.0.0"
     
 }
 }
