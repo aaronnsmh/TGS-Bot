@@ -13,7 +13,8 @@
     "discord.js": "^11.2.1",
     "snekfetch": "^3.2.9",
     "quick.db": "^5.3.5",
-    "superagent": "^3.8.0"
+    "superagent": "^3.8.0",
+    "tinyurl": "^1.0.0"
     
 }
 }
