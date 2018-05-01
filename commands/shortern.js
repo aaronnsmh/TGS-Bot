@@ -6,4 +6,5 @@
     var mes = encodeURI(message.content.split(" ").slice(1).join(" "))
     TinyURL.shorten(mes, function(res) {
     bot.sendMessage(message, res)
-}
+});
+   }
