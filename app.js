@@ -2,7 +2,7 @@
 // Version: 0.9 PRE-ALPHA / PRE-REALEASE
 // Discord Code: 
 
-const Discord = require('discord.js');
+const Discord = require('discord-js');
 const client = new Discord.Client();
 const db = require('quick.db');
 const prefix = '!!';
