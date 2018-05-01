@@ -1,7 +1,6 @@
 const shorten = require('isgd');
  
-exports.run = (client, message, args, tools) => {
- 
+exports.run = (Discord, client, message, args, tools) => {
   // The command will take one require argument, and one optional (link, title)
  
   // We also want to check if they typed anything at all, if not run this
