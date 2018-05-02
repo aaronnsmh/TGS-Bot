@@ -30,7 +30,7 @@ const options = {
   errors: ["time"],
 };
 
-module.exports.run = async (bot, message, args) => {
+exports.run = async (Discord, client, message, args) => {
   
   const item = quiz[Math.floor(Math.random() * quiz.length)];
   await message.channel.send(item.q);
