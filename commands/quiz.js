@@ -3,7 +3,7 @@ const quiz = [
   { q: "What color is the sky?", a: ["no color", "invisible"] },
   { q: "Name a soft drink brand.", a: ["pepsi", "coke", "rc", "7up", "sprite", "mountain dew"] },
   { q: "Name a programming language.", a: ["actionscript", "coffeescript", "c", "c++", "basic", "python", "perl", "javascript", "dotnet", "lua", "crystal", "go", "d", "php", "ruby", "rust", "dart", "java", "javascript"] },
-  { q: "Who's a good boy?", a: ["you are", "whirl"] },
+  { q: "Who's a good boy?", a: ["aaron", "aaronnsmh"] },
   { q: "Who created me?", a: ["Tea Cup", "Tea Cup#3343"] },
   { q: "What programming language am I made in?", a: ["javascript",] },
   { q: "Name the seventh planet from the Sun.", a: ["uranus"] },
