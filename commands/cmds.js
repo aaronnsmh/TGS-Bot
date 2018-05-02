@@ -9,7 +9,7 @@ let thumbnail = client.user.avatarURL;
         .setAuthor(name,thumbnail)
         .setColor(randomColor)
         .setTitle(":book:   " + name + " Commands")
-      .setDescription("Wondering what I do? Well you sir/ma'am have a very good question! Read on to see why I am here! The prefix here is 'KC' (thanks to SuperRussia for the idea)")
+      .setDescription("Wondering what I do? Well you sir/ma'am have a very good question! Read on to see why I am here! The prefix here is '!!'")
         .addField(":8ball: 8Ball [QUESTION]", "Responds with what will happen.")
         .addField(":gay_pride_flag:  randomcolor", "Responds with a random hex color.")
         .addField(":o: cointoss", "Tosses a coin.")
