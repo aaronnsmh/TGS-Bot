@@ -46,8 +46,14 @@ client.on('message', message => {
          
         client.on('message', message => {
          if (message.content.startsWith("im")) {
+            try {
             let commandFile = require(`./commands/im.js`);
             commandFile.run(Discord, client, message, args);
+            } catch (e) {
+
+            console.log(e);
+
+        }
   }
 });   
         if (!message.content.startsWith(prefix)) return;
