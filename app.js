@@ -18,7 +18,7 @@ client.on('ready', () => {
     client.user.setStatus("online");
 });
 
-bot.on('message', message => {
+client.on('message', message => {
   if (message.content.startsWith("im")) {
         let name1 = args[1];
         message.channel.send('Hello, ' + name1 + ' I am TGS Bot!')
