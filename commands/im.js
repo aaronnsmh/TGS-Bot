@@ -1,4 +1,4 @@
 exports.run = (Discord, client, message, args) => {
-let name1 = args[1];
+const name1 = args[0];
 message.channel.send('Hello, ' + name1 + ' I am TGS Bot!')
 }
