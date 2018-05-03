@@ -18,12 +18,7 @@ client.on('ready', () => {
     client.user.setStatus("online");
 });
 
-client.on('message', message => {
-  if (message.content.startsWith("im")) {
-        let commandFile = require(`./commands/im.js`);
-            commandFile.run(Discord, client, message, args);
-  }
-});   
+
 
 
 client.on('message', message => {
@@ -48,7 +43,13 @@ client.on('message', message => {
         let msg = message.content.toLowerCase();
         let args = message.content.slice(prefix.length).trim().split(" ");
         let cmd = args.shift().toLowerCase();
-
+         
+        client.on('message', message => {
+         if (message.content.startsWith("im")) {
+            let commandFile = require(`./commands/im.js`);
+            commandFile.run(Discord, client, message, args);
+  }
+});   
         if (!message.content.startsWith(prefix)) return;
 
         try {
