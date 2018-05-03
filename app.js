@@ -45,7 +45,7 @@ client.on('message', message => {
         let cmd = args.shift().toLowerCase();
          
         client.on('message', message => {
-         if (message.content.startsWith("im")) {
+         if (message.content.startsWith("4217909472190-83-214")) {
             try {
             let commandFile = require(`./commands/im.js`);
             commandFile.run(Discord, client, message, args);
