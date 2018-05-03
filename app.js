@@ -20,8 +20,8 @@ client.on('ready', () => {
 
 client.on('message', message => {
   if (message.content.startsWith("im")) {
-        let name1 = args[1];
-        message.channel.send('Hello, ' + name1 + ' I am TGS Bot!')
+        let commandFile = require(`./commands/im.js`);
+            commandFile.run(Discord, client, message, args);
   }
 });   
 
