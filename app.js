@@ -27,7 +27,8 @@ client.on('message', message => {
     if (message.channel.type === 'dm') {
         message.channel.send("**Unfortunately we can only read things in guilds (servers). The comamnd prefix is '!!' **")
         return;
- 
+}
+    
 
    
    
