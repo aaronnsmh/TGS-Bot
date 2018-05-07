@@ -5,6 +5,6 @@ exports.run = async (Discord, client, message, args) => {
   if (!message.content.includes("?")) return message.reply("Include a ? in your vote!")
     message.channel.send(`:ballot_box:  ${message.author.username} started a vote! React to my next message to vote on it. :ballot_box: `);
     const pollTopic = await message.channel.send(args);
-    pollTopic.react(`✅`);
     pollTopic.react(`⛔`);
+    pollTopic.react(`✅`);
 };
