@@ -12,8 +12,6 @@ exports.run = async (Discord, client, message, args) => {
 				value: args,
 				inline: true
 			}
-			thumbnail: { url: `${message.guild.iconURL ? message.guild.iconURL : ""}` },
-			color: 0xFFFFFF
 		}
 });
     pollTopic.react(`✅`);
