@@ -23,7 +23,7 @@ const getStatus = (msg, map = true) => {
 	return map ? statusMap[status] : status;
 };
 
-exports.run = (client, message) => {
+exports.run = (Discord, client, message, args) => {
 	let mods = message.guild.members.array().filter(msg => isStaff(msg) && !msg.user.bot).sort((a, b) => sortMap[getStatus(a, false)] > sortMap[getStatus(b, false)]);
 	mods = mods.map(msg => `${getStatus(msg)} **${msg.user.username}#${msg.user.discriminator}**`);
 	message.channel.send([`Moderators for **${message.guild.name}** :\n`].concat(mods));
