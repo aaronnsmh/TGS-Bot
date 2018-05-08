@@ -10,6 +10,6 @@ exports.run = async (Discord, client, message, args) => {
         .setFooter("Vote requested by: " + message.author + " at: ")
         .setTimestamp()
     const pollTopic = await message.channel.sendEmbed(admin);
-    pollTopic.react(`⛔`);
     pollTopic.react(`✅`);
+    pollTopic.react(`⛔`);
 };
