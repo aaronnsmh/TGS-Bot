@@ -5,7 +5,7 @@ exports.run = async (Discord, client, message, args) => {
   if (!message.content.includes("?")) return message.reply("Include a ? in your vote!")
     
   var admin= new Discord.RichEmbed()
-        .setTitle("Vote: " + args)
+        .setTitle("Vote: " + args.slice(0).join(" "))
         .setDescription("React below with ✅ or ⛔!")
         .setFooter("Vote requested by: " + message.author.id + " at: ")
         .setTimestamp()
