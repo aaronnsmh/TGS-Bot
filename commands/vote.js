@@ -7,7 +7,7 @@ exports.run = async (Discord, client, message, args) => {
   var admin= new Discord.RichEmbed()
         .setTitle("Vote: " + args.slice(0).join(" "))
         .setDescription("React below with ✅ or ⛔!")
-        .setFooter("Vote requested by: " + message.author.id + " at: ")
+        .setFooter("Vote requested by: " + message.author + " at: ")
         .setTimestamp()
     const pollTopic = await message.channel.sendEmbed(admin);
     pollTopic.react(`⛔`);
