@@ -14,7 +14,7 @@ exports.run = (Discord, client, message, args) => {
         const embed = new Discord.RichEmbed()
             .setColor(0x8cff00)
             .setTimestamp()
-            .setDescription(`**Action:** SetPrefix\n**User:** ${message.author.tag}\n**They changed it to:** ${i});
+            .setDescription(`**Action:** SetPrefix\n**User:** ${message.author.tag}\n**They changed it to:** ${i}`);
          staffc.send({embed});
     })
 
