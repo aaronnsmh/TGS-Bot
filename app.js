@@ -13,7 +13,7 @@ var randomColor = Math.floor(Math.random() * 16777215).toString(16);
    
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}! There are no apparent major bugs.`);
-    client.user.setActivity(' ' + client.user.name + ' | !!help', { type: 'PLAYING' });
+    client.user.setActivity(' ' + client.user.tag + ' | !!help', { type: 'PLAYING' });
     client.user.setStatus("online");
 });
 
