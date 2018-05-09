@@ -34,6 +34,7 @@ let thumbnail = client.user.avatarURL;
         .setTitle("Admin Commands")
         .setColor(randomColor)
         .addField(":loudspeaker: say [STRING]", "The bot says what you ask it to say, well duh.")
+        .addField(":gear: setprefix [STRING]", "The bot sets the prefix to a prefix of your choice!")
         .addField(":exclamation: announce [TITLE] [DESCRIPTION]", "Announces whatever you put in the channel you write it in.")
         .addField(":exclamation: eannounce [TITLE] [DESCRIPTION]", "Announces whatever you put in the channel you write it in, also tags everyone.")
     message.channel.sendEmbed(embedcmds);
