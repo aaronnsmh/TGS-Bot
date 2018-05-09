@@ -2,7 +2,7 @@ const db = require('quick.db')
 
 exports.run = (Discord, client, message, args) => {
 
-    if (!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send("You must be an `ADMINISTRATOR` to use the `setprefix` command in the " + guild.name + " server!")
+    if (!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send("You must be an `ADMINISTRATOR` to use the `setprefix` command in the " + message.guild.name + " server!")
     if (!args.join(" ")) return message.channel.send("__**Incorrect Usage**__\n**Correct Usage:** `setprefix <prefix>`!")
     
     db.set(`guildPrefix_${message.guild.id}`, args.join().trim()).then(i => {
