@@ -38,7 +38,7 @@ client.on('message', message => {
    }
    
    var guildid = message.guild.id
-   db.fetch(guildPrefix_${guildid}).then(i => {
+   db.fetch(`guildPrefix_${guildid}`).then(i => {
 
         let prefix = i || '!!'
 
