@@ -37,8 +37,8 @@ client.on('message', message => {
     message.channel.send(':zzz: :zzz: :sleeping: You woke me. How rude! :angry: My basic prefix is !! but it may have changed!')
    }
    
-var guildid = message.guild.id
-    db.fetch(guildPrefix_${guildid}).then(i => {
+   var guildid = message.guild.id
+   db.fetch(guildPrefix_${guildid}).then(i => {
 
         let prefix = i || '!!'
 
