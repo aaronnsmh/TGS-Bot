@@ -5,7 +5,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const db = require('quick.db');
-const prefix = '!!';
 const { get } = require("snekfetch"); 
 const superagent = require("superagent");
 const weather = require('weather-js');
@@ -35,32 +34,23 @@ client.on('message', message => {
    
    
    if (message.mentions.members.firstKey() === '440230198474965002') {
-    message.channel.send(':zzz: :zzz: :sleeping: You woke me. How rude! :angry: My prefix is !!')
+    message.channel.send(':zzz: :zzz: :sleeping: You woke me. How rude! :angry: My basic prefix is !! but it may have changed!')
    }
    
+var guildid = message.guild.id
+    db.fetch(guildPrefix_${guildid}).then(i => {
 
+        let prefix = i || '!!'
 
         let msg = message.content.toLowerCase();
         let args = message.content.slice(prefix.length).trim().split(" ");
         let cmd = args.shift().toLowerCase();
-         
-        client.on('message', message => {
-         if (message.content.startsWith("4217909472190-83-214")) {
-            try {
-            let commandFile = require(`./commands/im.js`);
-            commandFile.run(Discord, client, message, args);
-            } catch (e) {
 
-            console.log(e);
-
-        }
-  }
-});   
         if (!message.content.startsWith(prefix)) return;
 
         try {
 
-            let commandFile = require(`./commands/${cmd}.js`);
+            let commandFile = require(./commands/${cmd}.js);
             commandFile.run(Discord, client, message, args);
 
         } catch (e) {
