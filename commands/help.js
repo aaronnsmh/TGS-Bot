@@ -15,5 +15,5 @@ exports.run = (Discord, client, message, args) => {
             .setAuthor(name,thumbnail)
         message.channel.sendEmbed(embedcmds);
         message.delete(10000)
-    });
+    )};
 }
