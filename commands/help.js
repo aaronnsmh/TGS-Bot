@@ -4,7 +4,7 @@ exports.run = (Discord, client, message, args) => {
     
     let thumbnail = client.user.avatarURL;
     let name = client.user.username;
-    db.fetch(guildPrefix_${message.guild.id}.then(i => {
+    db.fetch(`guildPrefix_${message.guild.id}`.then(i => {
         message.reply("Here is the help you are looking for:");
         var embedcmds= new Discord.RichEmbed()
             .setFooter("© Made by Aaron")
