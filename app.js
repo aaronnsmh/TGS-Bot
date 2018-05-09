@@ -5,7 +5,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const db = require('quick.db');
-const prefix = '!!';
+const prefix = '!!' || '>';
 const { get } = require("snekfetch"); 
 const superagent = require("superagent");
 const weather = require('weather-js');
