@@ -38,7 +38,7 @@ client.on('message', message => {
    }
    
    var guildid = message.guild.id
-   db.fetch(`guildPrefix_${guildid}`).then(i => {
+    db.fetch(`guildPrefix_${guildid}`).then(i => {
 
         let prefix = i || '!!'
 
@@ -50,7 +50,7 @@ client.on('message', message => {
 
         try {
 
-            let commandFile = require(./commands/${cmd}.js);
+            let commandFile = require(`./commands/${cmd}.js`);
             commandFile.run(Discord, client, message, args);
 
         } catch (e) {
@@ -59,10 +59,11 @@ client.on('message', message => {
 
         } finally {
 
-            console.log(`${message.author.username} ${message.author.id} ran the command: ${cmd} probably unsuccsesfully!`);
+            console.log(`${message.author.username} ran the command: ${cmd} sucessfully!`);
 
         }
-    })
 
+    })
+})
 
 client.login(process.env.BOT_TOKEN);
